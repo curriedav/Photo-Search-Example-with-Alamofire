@@ -65,4 +65,14 @@ class ViewController: UIViewController {
                 }
         }
     }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar!) {
+        for subview in self.scrollView.subviews {
+            subview.removeFromSuperview()
+        }
+        
+        searchBar.resignFirstResponder()
+        
+        searchInstagramByHashtag(searchBar.text)
+    }
 }

@@ -19,6 +19,9 @@
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHQ-Yr-uDA">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="k1M-VR-30v"/>
+                                </connections>
                             </searchBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5Y-OZ-1z1">
                                 <rect key="frame" x="0.0" y="72" width="320" height="476"/>
